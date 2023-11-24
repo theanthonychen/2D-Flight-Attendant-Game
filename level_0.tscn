@@ -1,0 +1,189 @@
+[gd_scene load_steps=6 format=3 uid="uid://0cb1rr4f7tx3"]
+
+[ext_resource type="Texture2D" uid="uid://dhs7rldkmhf0m" path="res://graphics/seat_map.png" id="1_ucj2o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1qbjd"]
+size = Vector2(20, 133)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h1b0a"]
+size = Vector2(20, 343)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qc661"]
+size = Vector2(909, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cu6gn"]
+size = Vector2(20, 118)
+
+[node name="Level_0" type="Node2D"]
+position = Vector2(566, 330)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(50, -26)
+scale = Vector2(1.47687, 1.47327)
+texture = ExtResource("1_ucj2o")
+
+[node name="Bodies" type="Node2D" parent="."]
+
+[node name="ChairBodies" type="Node2D" parent="Bodies"]
+
+[node name="ChairBackBody2D" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(-62, -121)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D2" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(-62, 64)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D2"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D3" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(53, -122)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D3"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D4" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(53, 63)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D4"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D5" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(174, -121)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D5"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D6" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(174, 64)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D6"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D7" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(289, -122)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D7"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D8" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(289, 63)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D8"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D9" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(412, -121)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D9"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D10" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(412, 64)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D10"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D11" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(527, -122)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D11"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D12" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(527, 63)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D12"]
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D13" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(-200, -181)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D13"]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D14" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(-201, 123)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D14"]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D15" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(-156, -120)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D15"]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="ChairBackBody2D16" type="StaticBody2D" parent="Bodies/ChairBodies"]
+position = Vector2(-156, 61)
+disable_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/ChairBodies/ChairBackBody2D16"]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_1qbjd")
+
+[node name="WallBodies" type="Node2D" parent="Bodies"]
+
+[node name="Wall" type="StaticBody2D" parent="Bodies/WallBodies"]
+position = Vector2(-410, -155)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/WallBodies/Wall"]
+position = Vector2(0, 124.5)
+shape = SubResource("RectangleShape2D_h1b0a")
+
+[node name="Wall2" type="StaticBody2D" parent="Bodies/WallBodies"]
+position = Vector2(-316, -198)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/WallBodies/Wall2"]
+position = Vector2(458, -11)
+shape = SubResource("RectangleShape2D_qc661")
+
+[node name="Wall3" type="StaticBody2D" parent="Bodies/WallBodies"]
+position = Vector2(-311, 142)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/WallBodies/Wall3"]
+position = Vector2(441.5, 9)
+shape = SubResource("RectangleShape2D_qc661")
+
+[node name="Wall4" type="StaticBody2D" parent="Bodies/WallBodies"]
+position = Vector2(-424, 115)
+rotation = -1.309
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/WallBodies/Wall4"]
+position = Vector2(-10.1211, 47.2289)
+shape = SubResource("RectangleShape2D_cu6gn")
+
+[node name="Wall5" type="StaticBody2D" parent="Bodies/WallBodies"]
+position = Vector2(-407, -197)
+rotation = -1.83259
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/WallBodies/Wall5"]
+position = Vector2(-10.1211, 47.2289)
+shape = SubResource("RectangleShape2D_cu6gn")
+
+[node name="Wall6" type="StaticBody2D" parent="Bodies/WallBodies"]
+position = Vector2(596, -150)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bodies/WallBodies/Wall6"]
+position = Vector2(0, 118.5)
+shape = SubResource("RectangleShape2D_h1b0a")
