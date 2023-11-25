@@ -1,11 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://ddr7p0seds6ed"]
+[gd_scene load_steps=7 format=3 uid="uid://ddr7p0seds6ed"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_4xrjy"]
 [ext_resource type="PackedScene" uid="uid://0cb1rr4f7tx3" path="res://level_0.tscn" id="1_tcb5m"]
 [ext_resource type="PackedScene" uid="uid://cyxemduei0o64" path="res://attendant.tscn" id="2_e5hc8"]
 [ext_resource type="Script" path="res://scripts/ScoreLabel.gd" id="3_bolwy"]
 [ext_resource type="PackedScene" uid="uid://fv2pkyal6ggw" path="res://customer.tscn" id="5_yx8w2"]
-[ext_resource type="PackedScene" uid="uid://c5ywgwvqgrpv2" path="res://bed.tscn" id="6_7bxgc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twc2b"]
 size = Vector2(118, 98.625)
@@ -42,12 +41,6 @@ debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="Customer" parent="." instance=ExtResource("5_yx8w2")]
 position = Vector2(482, 174)
-
-[node name="Bed" parent="." instance=ExtResource("6_7bxgc")]
-position = Vector2(1207, 231)
-
-[node name="Bed2" parent="." instance=ExtResource("6_7bxgc")]
-position = Vector2(1209, 329)
 
 [connection signal="body_entered" from="Cafe" to="." method="_on_cafe_body_entered"]
 [connection signal="body_entered" from="Cafe" to="UserInterface/ScoreLabel" method="_on_cafe_body_entered"]
